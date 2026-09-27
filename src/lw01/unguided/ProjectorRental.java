@@ -5,7 +5,6 @@ public class ProjectorRental extends Rental {
     public ProjectorRental(String id, int days, int units) {
         super(id, days, units);
     }
-
     @Override
     public int calculateCharge() {
         int days = getDays();
@@ -19,7 +18,6 @@ public class ProjectorRental extends Rental {
 
         return baseCharge + 20000;
     }
-
     @Override
     public String label() {
         return "Projector";

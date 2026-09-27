@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(Main.class.getResourceAsStream("rentals.txt"));
 
         int totalRecords = scanner.nextInt();
-        Rental[] rentals = new Rental[totalRecords]; // Sesuai B1.4
+        Rental[] rentals = new Rental[totalRecords]; 
 
         int index = 0;
         while (scanner.hasNext() && index < totalRecords) {
@@ -29,7 +29,6 @@ public class Main {
 
         scanner.close();
 
-        // Sesuai B1.5: Hanya memanggil summary() dalam single loop
         for (Rental rental : rentals) {
             System.out.println(rental.summary());
         }
