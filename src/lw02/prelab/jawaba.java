@@ -13,7 +13,6 @@ public class jawaba {
         Queue<String[]> queue = new LinkedList<>();
         Stack<String[]> failed = new Stack<>();
 
-        // Disesuaikan menjadi jawaba.class sesuai nama public class
         Scanner scanner = new Scanner(jawaba.class.getResourceAsStream("transactions.txt"));
 
         while(scanner.hasNext()){
