@@ -13,6 +13,20 @@ public class Main {
 //problem 1
     Scanner scanner = new Scanner(Main.class.getResourceAsStream("playlist.txt"));
         List<String> playlist = new ArrayList<>();
+
+    // ternyata aku belum split biar lagunya bisa dua kata g satu kata doang
+    // while
+    // String[] parts = line.split(" ", 2);
+    //String operation = parts[0]
+    //String song = parts[1];
+    //if(operation.equals("ADD")){
+    // playlist.add(song);
+    //} else if( operation.equals("INSERT")){
+    // String[] insertData = song.split( " ", 2);
+    //int index = Integer.parseInt(insertData[0]);
+    //String songName = insertData[1];
+    // playlist.add(index, songName)}
+
     while(scanner.hasNext()){
         String type = scanner.next();
         
